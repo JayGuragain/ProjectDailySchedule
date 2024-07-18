@@ -1,0 +1,341 @@
+/* src/App.css */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: #4caf50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.schedule {
+  margin-top: 20px;
+}
+
+.schedule select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.day {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.day h2 {
+  background: #4caf50;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+}
+
+.day ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.day li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.day li:last-child {
+  border-bottom: none;
+}
+
+.day li strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.day li em {
+  color: #777;
+}
+
+.day li .note {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+.daily-log,
+.daily-task-manager {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.daily-log input[type="date"],
+.view-logs input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.daily-log .ql-container {
+  height: 200px;
+}
+
+.view-logs {
+  margin-top: 20px;
+}
+
+.daily-task-manager {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.previous-day-goals,
+.today-tasks {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 300px;
+}
+
+.previous-day-goals h2,
+.today-tasks h2 {
+  margin-top: 0;
+  color: #4caf50;
+}
+
+.task-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.task-input input,
+.task-input select,
+.task-input label {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.task-input button {
+  padding: 10px 20px;
+  border: none;
+  background: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-list,
+.completed-tasks,
+.remaining-tasks {
+  margin-top: 20px;
+}
+
+.task-list h3,
+.completed-tasks h3,
+.remaining-tasks h3 {
+  margin-top: 0;
+  color: #4caf50;
+}
+
+.task-list ul,
+.completed-tasks ul,
+.remaining-tasks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li,
+.completed-tasks li,
+.remaining-tasks li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-list li:last-child,
+.completed-tasks li:last-child,
+.remaining-tasks li:last-child {
+  border-bottom: none;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list li button {
+  background: #f44336;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.task-list li button:hover {
+  background: #d32f2f;
+}
+
+.notes-section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+/* src/App.css */
+.daily-log {
+  margin: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.daily-log h2 {
+  color: #4caf50;
+}
+
+.daily-log input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.daily-log .ql-container {
+  height: 200px;
+}
+
+.daily-log button {
+  background: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.daily-log button:hover {
+  background: #45a049;
+}
+
+.view-logs {
+  margin-top: 20px;
+}
+
+.view-logs h2 {
+  color: #4caf50;
+}
+
+.view-logs input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.view-logs div {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
